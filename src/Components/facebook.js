@@ -2,13 +2,13 @@
  * @Author: Ali
  * @Date:   2018-06-03T11:20:45+02:00
  * @Last modified by:   Ali
- * @Last modified time: 2018-06-03T11:32:54+02:00
+ * @Last modified time: 2018-06-03T12:55:25+02:00
  */
  /**
   * @Author: Ali
   * @Date:   2018-06-03T10:47:42+02:00
  * @Last modified by:   Ali
- * @Last modified time: 2018-06-03T11:32:54+02:00
+ * @Last modified time: 2018-06-03T12:55:25+02:00
   */
  import React, { Component } from 'react'
  import FacebookLogin from 'react-facebook-login'
@@ -25,6 +25,7 @@
      }
    }
    responseFacebook = response => {
+     console.log(response)
      this.setState({
        isLoggedIn:true,
        userID: response.userID,
@@ -41,14 +42,14 @@
         fbContent = (
           <div
             style={{
-              width: "400px",
+              width: "300px",
               margin: "auto",
               background: "#f4f4f4",
               padding: "20px"
             }}
           >
             <img src={picture} alt={name} />
-            <h2>Welcome {name}</h2>
+            Welcome <h2>{name}</h2>
             Email: {email}
           </div>
         )
@@ -56,7 +57,8 @@
         fbContent = (<FacebookLogin
           appId="1569409596517965"
           autoLoad={true}
-          fields="name,email,picture"
+          fields="name,email,picture,hometown"
+          scope="public_profile,user_friends,user_actions.books"
           onClick={this.componentClicked}
           callback={this.responseFacebook} />)
       }
@@ -64,6 +66,5 @@
        <div>{fbContent}</div>
      )
    }
-
  }
  export default Facebook
