@@ -5638,6 +5638,10 @@ react-google-login@^3.2.1:
     "@types/react" "*"
     prop-types "^15.6.0"
 
+react-instagram-login@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/react-instagram-login/-/react-instagram-login-1.3.0.tgz#f6d4c713ec962556ea2b7dc1f434ce2e86284847"
+
 react-scripts@1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-1.1.4.tgz#d5c230e707918d6dd2d06f303b10f5222d017c88"
