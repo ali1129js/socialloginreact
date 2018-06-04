@@ -1,15 +1,9 @@
 /**
  * @Author: Ali
- * @Date:   2018-06-03T11:20:45+02:00
+ * @Date:   2018-06-03T16:12:03+02:00
  * @Last modified by:   Ali
- * @Last modified time: 2018-06-03T12:55:25+02:00
+ * @Last modified time: 2018-06-03T16:12:11+02:00
  */
- /**
-  * @Author: Ali
-  * @Date:   2018-06-03T10:47:42+02:00
- * @Last modified by:   Ali
- * @Last modified time: 2018-06-03T12:55:25+02:00
-  */
  import React, { Component } from 'react'
  import FacebookLogin from 'react-facebook-login'
 
@@ -58,7 +52,7 @@
           appId="1569409596517965"
           autoLoad={true}
           fields="name,email,picture,hometown"
-          scope="public_profile,user_friends,user_actions.books"
+          scope="public_profile"
           onClick={this.componentClicked}
           callback={this.responseFacebook} />)
       }
