@@ -16,7 +16,7 @@ import GoogleLogin from 'react-google-login'
     return (
     <div>
       <GoogleLogin
-        clientId="864476898060-idnv18f0blb29lpjms3dcg5qao8510ca.apps.googleusercontent.com"
+        clientId="**************************"
         buttonText="Login With Google"
         onSuccess={this.responseGoogle}
         onFailure={this.responseGoogle}
