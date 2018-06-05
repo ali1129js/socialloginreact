@@ -14,7 +14,7 @@ import InstagramLogin from 'react-instagram-login'
   }
     return (
       <InstagramLogin
-        clientId="6a293500b19640709cae6f25c657cfa8"
+        clientId="************************"
         buttonText="Login With Instagram"
         onSuccess={this.responseInstagram}
         onFailure={this.responseInstagram}

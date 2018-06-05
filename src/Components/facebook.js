@@ -49,7 +49,7 @@
         )
       } else {
         fbContent = (<FacebookLogin
-          appId="1569409596517965"
+          appId="**************************"
           autoLoad={true}
           fields="name,email,picture,hometown"
           scope="public_profile"
