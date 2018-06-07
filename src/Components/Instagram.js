@@ -2,16 +2,15 @@
  * @Author: Ali
  * @Date:   2018-06-04T14:06:59+02:00
  * @Last modified by:   Ali
- * @Last modified time: 2018-06-04T14:15:12+02:00
+ * @Last modified time: 2018-06-07T10:50:04+02:00
  */
 import React, {Component} from 'react';
 import InstagramLogin from 'react-instagram-login'
  class Instagram extends Component {
-
+    responseInstagram = (response) => {
+   console.log(response);
+ }
   render() {
-    const responseInstagram = (response) => {
-    console.log(response);
-  }
     return (
       <InstagramLogin
         clientId="************************"
